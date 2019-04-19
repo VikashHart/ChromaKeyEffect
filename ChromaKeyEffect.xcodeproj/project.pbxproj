@@ -7,21 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		814272AE225CEA0A00157A24 /* ForegroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814272AD225CEA0A00157A24 /* ForegroundView.swift */; };
+		814272B0225D16DC00157A24 /* PixelMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814272AF225D16DC00157A24 /* PixelMapViewController.swift */; };
+		814272B2225D184300157A24 /* CompositeImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814272B1225D184300157A24 /* CompositeImageViewController.swift */; };
+		814272B4225D189F00157A24 /* MappedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814272B3225D189F00157A24 /* MappedImageView.swift */; };
+		814272B6225D18B600157A24 /* CompositedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814272B5225D18B600157A24 /* CompositedImageView.swift */; };
 		816A0A1B225A6CAA00F4A38C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816A0A1A225A6CAA00F4A38C /* AppDelegate.swift */; };
-		816A0A1D225A6CAA00F4A38C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816A0A1C225A6CAA00F4A38C /* ViewController.swift */; };
+		816A0A1D225A6CAA00F4A38C /* ForegroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816A0A1C225A6CAA00F4A38C /* ForegroundViewController.swift */; };
 		816A0A20225A6CAA00F4A38C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 816A0A1E225A6CAA00F4A38C /* Main.storyboard */; };
 		816A0A22225A6CAE00F4A38C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 816A0A21225A6CAE00F4A38C /* Assets.xcassets */; };
 		816A0A25225A6CAE00F4A38C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 816A0A23225A6CAE00F4A38C /* LaunchScreen.storyboard */; };
+		816A0A35225A967400F4A38C /* ChromaKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816A0A34225A967400F4A38C /* ChromaKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		814272AD225CEA0A00157A24 /* ForegroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForegroundView.swift; sourceTree = "<group>"; };
+		814272AF225D16DC00157A24 /* PixelMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelMapViewController.swift; sourceTree = "<group>"; };
+		814272B1225D184300157A24 /* CompositeImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeImageViewController.swift; sourceTree = "<group>"; };
+		814272B3225D189F00157A24 /* MappedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappedImageView.swift; sourceTree = "<group>"; };
+		814272B5225D18B600157A24 /* CompositedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositedImageView.swift; sourceTree = "<group>"; };
 		816A0A17225A6CAA00F4A38C /* ChromaKeyEffect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChromaKeyEffect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		816A0A1A225A6CAA00F4A38C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		816A0A1C225A6CAA00F4A38C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		816A0A1C225A6CAA00F4A38C /* ForegroundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForegroundViewController.swift; sourceTree = "<group>"; };
 		816A0A1F225A6CAA00F4A38C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		816A0A21225A6CAE00F4A38C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		816A0A24225A6CAE00F4A38C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		816A0A26225A6CAE00F4A38C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		816A0A34225A967400F4A38C /* ChromaKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChromaKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +47,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		814272AA225CE9AC00157A24 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				816A0A1C225A6CAA00F4A38C /* ForegroundViewController.swift */,
+				814272AF225D16DC00157A24 /* PixelMapViewController.swift */,
+				814272B1225D184300157A24 /* CompositeImageViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		814272AB225CE9D800157A24 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				816A0A34225A967400F4A38C /* ChromaKey.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		814272AC225CE9E200157A24 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				814272AD225CEA0A00157A24 /* ForegroundView.swift */,
+				814272B3225D189F00157A24 /* MappedImageView.swift */,
+				814272B5225D18B600157A24 /* CompositedImageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		816A0A0E225A6CAA00F4A38C = {
 			isa = PBXGroup;
 			children = (
@@ -55,7 +95,9 @@
 			isa = PBXGroup;
 			children = (
 				816A0A1A225A6CAA00F4A38C /* AppDelegate.swift */,
-				816A0A1C225A6CAA00F4A38C /* ViewController.swift */,
+				814272AB225CE9D800157A24 /* Utilities */,
+				814272AC225CE9E200157A24 /* Views */,
+				814272AA225CE9AC00157A24 /* View Controllers */,
 				816A0A1E225A6CAA00F4A38C /* Main.storyboard */,
 				816A0A21225A6CAE00F4A38C /* Assets.xcassets */,
 				816A0A23225A6CAE00F4A38C /* LaunchScreen.storyboard */,
@@ -135,8 +177,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				816A0A1D225A6CAA00F4A38C /* ViewController.swift in Sources */,
+				816A0A1D225A6CAA00F4A38C /* ForegroundViewController.swift in Sources */,
+				814272AE225CEA0A00157A24 /* ForegroundView.swift in Sources */,
+				816A0A35225A967400F4A38C /* ChromaKey.swift in Sources */,
+				814272B0225D16DC00157A24 /* PixelMapViewController.swift in Sources */,
+				814272B6225D18B600157A24 /* CompositedImageView.swift in Sources */,
 				816A0A1B225A6CAA00F4A38C /* AppDelegate.swift in Sources */,
+				814272B4225D189F00157A24 /* MappedImageView.swift in Sources */,
+				814272B2225D184300157A24 /* CompositeImageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +331,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63X7US2LVV;
 				INFOPLIST_FILE = ChromaKeyEffect/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +349,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63X7US2LVV;
 				INFOPLIST_FILE = ChromaKeyEffect/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
