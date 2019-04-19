@@ -3,10 +3,8 @@ import UIKit
 class CompositeImageViewController: UIViewController {
 
     var formattedImage: CIImage?
-    var imageArray = [UIImage]()
     let chromaKey = ChromaKey()
     let compositedImageView = CompositedImageView()
-    let serialQueue = DispatchQueue(label: "backgroundThread")
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,8 +19,6 @@ class CompositeImageViewController: UIViewController {
                 let backgroundImage = CIImage(image: image),
                 let filteredImage = self.formattedImage {
                 let compositedImage = self.chromaKey.compositeImages(foregroundCIImage: filteredImage, backgroundCIImage: backgroundImage)
-                self.imageArray.append(UIImage(ciImage: compositedImage))
-
                 self.compositedImageView.compositedImageView.image = UIImage(ciImage: compositedImage)
             }
         }
@@ -35,12 +31,6 @@ class CompositeImageViewController: UIViewController {
 
     required init?(coder aDecoder: NSCoder) {
         fatalError()
-    }
-
-    @objc func share() {
-        let items = imageArray
-        let ac = UIActivityViewController(activityItems: items, applicationActivities: nil)
-        present(ac, animated: true)
     }
 
     private func setupViews() {
